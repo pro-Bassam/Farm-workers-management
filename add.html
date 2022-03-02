@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/add.css" />
+    <link rel="icon" type="image/png" href="resources/images/farm.png">
+    <title>My Farm - Add</title>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="add.html">Add worker</a></li>
+      <li>
+        <a href="edit.html">Edit worker</a>
+      </li>
+      <li>
+        <a href="show.html">Show worker</a>
+      </li>
+    </ul>
+
+    <div class="card">
+      <h1>Add worker</h1>
+      <form>
+        <label for="workerID">ID:</label><br />
+        <input type="number" id="workerID" name="fname" required />
+
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="" required/>
+
+        <label for="mname">Middle name:</label><br />
+        <input type="text" id="mname" name="mname" value="" required/>
+
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="" required/>
+
+        <label for="section_id">Section ID:</label><br />
+        <input type="number" id="section_id" name="section_id" value="" required/>
+
+        <label for="gender">Gender:</label><br />
+        <input type="text" id="gender" name="gender" value="" required/>
+
+        <label for="phone-1">Phone-1:</label><br />
+        <input type="tel" id="phone-1" name="phone-1" value="" placeholder="123-45-678"  required/>
+
+        <label for="phone-2">Phone-2:</label><br />
+        <input type="tel" id="phone-2" name="phone-2" value="" placeholder="123-45-678"  required/>
+
+        <label for="salary">Salary:</label><br />
+        <input type="number" id="salary" name="salary" value=""  required/>
+
+        <label for="manger">Manager ID:</label><br />
+        <input type="number" id="manger" name="manger" value="" required/>
+
+        <button
+          class="button button4"
+          type="button"
+          id="addWorker"
+          value="Submit"
+        >Submit</button>
+      </form>
+      <p id="warn">Please Enter data correctly!!</p>
+    </div>
+    <script src="scripts/add.js"></script>
+  </body>
+</html>

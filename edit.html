@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/edit.css" />
+    <link rel="icon" type="image/png" href="resources/images/farm.png">
+    <title>My Farm - Edit</title>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="add.html">Add worker</a></li>
+      <li><a href="edit.html">Edit worker</a></li>
+      <li>
+        <a href="show.html">Show worker</a>
+      </li>
+    </ul>
+
+    <div class="card">
+      <h1>Edit worker</h1>
+      <form>
+        <label for="workerID">ID:</label><br />
+        <input type="number" id="workerID" name="workerID" />
+        
+        <input class="edit" id="fillBtn" type="button" value="Fill data" />
+        <br>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="" />
+
+        <label for="mname">Middle name:</label><br />
+        <input type="text" id="mname" name="mname" value="" />
+
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="" />
+
+        <label for="section_id">Section ID:</label><br />
+        <input type="number" id="section_id" name="section_id" value="" />
+
+        <label for="gender">Gender:</label><br />
+        <input type="text" id="gender" name="gender" value="" />
+
+        <label for="phone-1">Phone-1:</label><br />
+        <input type="tel" id="phone1" name="phone-1" value="" placeholder="123-45-678" />
+
+        <label for="phone-2">Phone-2:</label><br />
+        <input type="tel" id="phone2" name="phone-2" value="" placeholder="123-45-678" />
+
+        <label for="salary">Salary:</label><br />
+        <input type="number" id="salary" name="salary" value="" />
+
+        <label for="manger">Manager ID:</label><br />
+        <input type="number" id="manger" name="manger" value="" />
+
+        <input class="edit" id="submitEdits" type="submit" value="Edit" />
+      </form>
+      <div id="clintNumDiv"></div>
+    </div>
+  </body>
+  <script src="scripts/edit.js"></script>
+</html>

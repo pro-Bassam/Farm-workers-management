@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/show.css" />
+    <link rel="icon" type="image/png" href="resources/images/farm.png">
+    <title>My Farm - Show</title>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="add.html">Add worker</a></li>
+      <li>
+        <a href="edit.html">Edit worker</a>
+      </li>
+      <li><a href="show.html">Show worker</a></li>
+    </ul>
+
+    <div class="card">
+      <h1>Search worker</h1>
+      <form>
+        <label for="workerID">ID:</label><br />
+        <input type="number" id="workerID" name="workerID" />
+
+        <input class="edit" id="submitEdits" type="button" value="Show" />
+        <input class="edit" id="showAll" type="button" value="Get All" />
+        <input class="edit" id="total" type="button" value="Get Total Number" />
+        
+        <br /><br />
+        <div></div>
+      </form>
+      <div id="clintNumDiv"></div>
+    </div>
+  </body>
+  <script src="scripts/show.js"></script>
+</html>

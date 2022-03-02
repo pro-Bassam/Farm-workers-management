@@ -1,0 +1,51 @@
+@font-face {
+  font-family: google-sans;
+  src: url(../resources/fonts/GoogleSans-Regular.ttf);
+}
+
+
+body {
+  background-image: url("../resources/images/background.jpg");
+  background-repeat: no-repeat;
+  /* background-origin: content-box; */
+  background-size: cover;
+  font-family: google-sans;
+}
+
+h1{
+  padding-top: 10px;
+  padding-left: 700px;
+  color: #000;
+}
+
+
+ul {
+  padding-left: 550px;
+  list-style-type: none;
+  width: 100%;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
